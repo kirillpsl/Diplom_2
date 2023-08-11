@@ -28,8 +28,6 @@ public class RegistrationUserTest {
         response.then().assertThat().statusCode(200)
                 .and()
                 .body("success", equalTo(true));
-
-        System.out.println(response.getBody().asString());
     }
 
     @Test
